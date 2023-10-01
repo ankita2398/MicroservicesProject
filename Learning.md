@@ -5,3 +5,4 @@
 * spring-cloud-starter-sleuth  => Just add sleuth in your dependency and you’ll see trace ids are propagating in all logs.
 * @NoArgsConstructor : It is **compulsory** in Entity class.
 * It is not **compulsory** to add _@**Repository**_ Tag on your Repository interface. Because it is already being extended by JpaRepository in its hierarchy.
+* When we are adding Redis to our system, it is important for Entity class to implement **_Serializable_**. 

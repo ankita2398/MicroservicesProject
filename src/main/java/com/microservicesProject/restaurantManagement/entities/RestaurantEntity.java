@@ -6,12 +6,13 @@ import lombok.NoArgsConstructor;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "restaurant")
 @NoArgsConstructor
 @Data
-public class RestaurantEntity {
+public class RestaurantEntity implements Serializable {
 
     @Id
     private Integer id;

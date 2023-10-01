@@ -9,3 +9,10 @@ services:
     ports:
       - "5432:5432"
     restart: unless-stopped
+  redis:
+    image: redis
+    environment:
+      REDIS_PASSWORD: redis
+    ports:
+      - "6379:6379"
+    restart: unless-stopped
